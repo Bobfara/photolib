@@ -14,6 +14,8 @@
 		6D1DD31E1EF6FEE800D3E3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1DD31C1EF6FEE800D3E3A1 /* LaunchScreen.storyboard */; };
 		6D1DD3291EF6FEE800D3E3A1 /* MyphotoHoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1DD3281EF6FEE800D3E3A1 /* MyphotoHoodTests.swift */; };
 		6D1DD3341EF6FEE800D3E3A1 /* MyphotoHoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1DD3331EF6FEE800D3E3A1 /* MyphotoHoodUITests.swift */; };
+		6D1DD3431EF70BDE00D3E3A1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1DD3421EF70BDE00D3E3A1 /* Post.swift */; };
+		6DDB09851EF72BA100793124 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB09841EF72BA100793124 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		6D1DD32F1EF6FEE800D3E3A1 /* MyphotoHoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyphotoHoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1DD3331EF6FEE800D3E3A1 /* MyphotoHoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyphotoHoodUITests.swift; sourceTree = "<group>"; };
 		6D1DD3351EF6FEE800D3E3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D1DD3421EF70BDE00D3E3A1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6DDB09841EF72BA100793124 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		6D1DD3121EF6FEE800D3E3A1 /* MyphotoHood */ = {
 			isa = PBXGroup;
 			children = (
+				6DDB09831EF72B5100793124 /* View */,
+				6D1DD3411EF70BA500D3E3A1 /* Model */,
 				6D1DD3131EF6FEE800D3E3A1 /* AppDelegate.swift */,
 				6D1DD3151EF6FEE800D3E3A1 /* ViewController.swift */,
 				6D1DD3171EF6FEE800D3E3A1 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				6D1DD3351EF6FEE800D3E3A1 /* Info.plist */,
 			);
 			path = MyphotoHoodUITests;
+			sourceTree = "<group>";
+		};
+		6D1DD3411EF70BA500D3E3A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D1DD3421EF70BDE00D3E3A1 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6DDB09831EF72B5100793124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB09841EF72BA100793124 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1DD3431EF70BDE00D3E3A1 /* Post.swift in Sources */,
 				6D1DD3161EF6FEE800D3E3A1 /* ViewController.swift in Sources */,
 				6D1DD3141EF6FEE800D3E3A1 /* AppDelegate.swift in Sources */,
+				6DDB09851EF72BA100793124 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +531,7 @@
 				6D1DD33A1EF6FEE800D3E3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D1DD33B1EF6FEE800D3E3A1 /* Build configuration list for PBXNativeTarget "MyphotoHoodTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +540,7 @@
 				6D1DD33D1EF6FEE800D3E3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D1DD33E1EF6FEE800D3E3A1 /* Build configuration list for PBXNativeTarget "MyphotoHoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +549,7 @@
 				6D1DD3401EF6FEE800D3E3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
