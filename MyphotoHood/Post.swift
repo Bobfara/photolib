@@ -13,14 +13,29 @@ import Foundation
 
 class Post {
     
-    fileprivate var imagePath: String
-    fileprivate var title: String
-    fileprivate var postDesc: String
-    init (imagePath: String, title: String, Description: String){
+    
+    
+    fileprivate var _imagePath: String!
+    fileprivate var _title: String!
+    fileprivate var _postDesc: String!
+    
+    
+    var imagepath: String{
+        return _imagePath
+    }
+    
+    var title: String{
+        return _imagePath
+    }
+    var postDesc: String{
+        return _imagePath
+    }
+    
+    init (imagePath: String, title: String, postDesc: String){
         
-        self.imagePath = imagePath
-        self.title = title
-        self.postDesc = Description
+        self._imagePath = imagePath
+        self._title = title
+        self._postDesc = postDesc
         
         
     }

@@ -20,8 +20,13 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
 
+    }
+    func configureCell(_ post: Post){
+        
+        titleLbl.text = post.title
+        descLbl.text = post.postDesc
+        
+    }
     
 }
